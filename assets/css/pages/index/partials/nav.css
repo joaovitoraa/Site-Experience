@@ -1,0 +1,209 @@
+nav{
+  display: flex;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 100px;
+  height: 80px;
+  z-index: 10;
+}
+
+nav.scroll{
+  background-color: #11162a7a;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+nav .opcoes{
+  display: flex;
+  align-items: center;
+  justify-content:space-between ;
+  width: 100%;
+
+
+}
+nav .opcoes .central{
+  display: flex;
+  align-items: center;
+}
+nav .opcoes .central a {
+  font-family: var(--light);
+  font-size: var(--f2);
+  color: var(--cor-cinza);
+  margin: 0 0 0 30px;
+  transition: all 0.3s;
+}
+nav .opcoes .central a:hover{
+  color: var(--cor-branco);
+}
+nav .opcoes .lateral{
+  display: flex;
+  align-items: center;
+}
+nav .opcoes .lateral a {
+  display: flex;
+  align-items: center;
+  font-family: var(--bold);
+  color: var(--cor-branco);
+  transition: all 0.3s ;
+}
+nav .opcoes .lateral a img{
+margin: 0 10px 0 0;
+}
+nav .opcoes .lateral a.entrar:hover{
+  opacity: 0.6;
+}
+
+nav .opcoes .lateral a.registrar{
+  padding: 15px 30px;
+  border-radius: 50px;
+  background: linear-gradient(0deg, var(--cor-azul-1),var(--cor-azul-2));
+  background: -webkit-linear-gradient(0deg, var(--cor-azul-1),var(--cor-azul-2));
+  margin: 0 0 0 30px;
+
+}
+
+nav .opcoes .lateral a.registrar:hover{
+  filter: brightness(120%);
+}
+
+nav button.menu{
+  display: none;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background-color: transparent;
+}
+nav button.menu span {
+  background-color: var(--cor-branco);
+  position: absolute;
+  border-radius:5px ;
+  height: 3px;
+  transition: all 0.3s;
+}
+nav button.menu span.um {
+  width: 25px;
+  right:0 ;
+  bottom: 4px;
+}
+nav button.menu span.dois {
+  width: 35px;
+  top: 4px;
+  right: 0;
+}
+nav button.menu.ativo span{
+  background-color: var(--cor-vermelho);
+}
+nav button.menu.ativo span.um {
+  width: 30px;
+  right: -5px;
+  bottom: 8px;
+  transform: rotate(45deg);
+}
+nav button.menu.ativo span.dois {
+  width: 30px;
+  top: 8px;
+  right: -5px;
+  transform: rotate(-45deg);
+}
+
+/* Responsivo */
+@media screen and (max-width:1000px){
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 60px;
+  
+  }
+  nav .opcoes{
+    flex-direction: column;
+    align-items: flex-start;
+    background-color:var(--cor-azul-3);
+    border: 1px solid #ffffff2f;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 280px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events:none;
+  
+  
+  }
+  nav .opcoes.mostrar{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  nav .opcoes .central{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .opcoes .central a {
+    margin: 0 0 20px 0;
+  }
+  nav .opcoes .lateral{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .opcoes .lateral a {
+    display: flex;
+    align-items: center;
+    font-family: var(--bold);
+    color: var(--cor-branco);
+    transition: all 0.3s ;
+  }
+  nav .opcoes .lateral a img{
+  margin: 0 10px 0 0;
+  }
+  nav .opcoes .lateral a.registrar{
+    padding: 13px 25px;
+    margin:20px 0 0 0;
+  
+  }
+
+  nav button.menu{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-color: transparent;
+  }
+  nav button.menu span {
+    background-color: var(--cor-branco);
+    position: absolute;
+    border-radius:5px ;
+    height: 3px;
+    transition: all 0.3s;
+  }
+  nav button.menu span.um {
+    width: 25px;
+    right:0 ;
+    bottom: 4px;
+  }
+  nav button.menu span.dois {
+    width: 35px;
+    top: 4px;
+    right: 0;
+  }
+  nav button.menu.ativo span{
+    background-color: var(--cor-vermelho);
+  }
+  nav button.menu.ativo span.um {
+    width: 30px;
+    right: -5px;
+    bottom: 8px;
+    transform: rotate(45deg);
+  }
+  nav button.menu.ativo span.dois {
+    width: 30px;
+    top: 8px;
+    right: -5px;
+    transform: rotate(-45deg);
+  }
+}  

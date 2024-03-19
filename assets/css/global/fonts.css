@@ -1,0 +1,12 @@
+@font-face{
+  font-family: 'figtree-bold';
+  src: url('../../images/fonts/figtree-bold.woff');
+}
+@font-face{
+  font-family: 'figtree-regular';
+  src: url('../../images/fonts/figtree-regular.woff');
+}
+@font-face{
+  font-family: 'figtree-light';
+  src: url('../../images/fonts/figtree-light.woff');
+}

@@ -1,0 +1,27 @@
+:root {
+   
+  --cor-azul-1 :#60afff;
+  --cor-azul-2 :#6080ff;
+  --cor-azul-3 :#11162a;
+  --cor-cinza : #99a4bf;
+  --cor-branco: #fff;
+  --cor-preto: #000000;
+  --cor-verde-1:#60ffb3;
+  --cor-verde-2:#3e9882;
+  --cor-amarelo:#ffcc23;
+  --cor-vermelho:#E03065;
+
+  --bold: 'figtree-bold';
+  --regular: 'figtree-regular';
+  --light: 'figtree-light';
+
+--f1: clamp(0.6rem, 1vw,0.8rem);
+--f2: clamp(0.8rem, 1vw,1rem);
+--f3: clamp(1rem, 1vw,1.2rem);
+--f4: clamp(1.2rem, 1vw,1.5rem);
+--f5: clamp(1.5rem, 1vw,2rem);
+--f6: clamp(2rem, 1vw,4rem);
+--f7: clamp(3rem, 1vw,7rem);
+
+
+}
